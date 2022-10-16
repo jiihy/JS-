@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 반복문</title>
+    <script>
+        //break : 반복문을 벗어나는 키워드, 완전히 끝
+        //continue : 현재 반복을 벗어나는 키워드, 지금만 끝났을 뿐 또 시작됨
+        
+        //1~10 사이의 숫자 중 3배수를 반환하지 않기
+
+        for(var i=1;i<=10;i++){
+
+            if(i % 3 == 0){ //i를 3으로 나눴을 때 0이 된다 = 3의 배수
+                continue;
+            }else{
+                alert(i);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

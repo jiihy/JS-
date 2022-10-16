@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 조건문</title>
+    <script>
+        //switch : case에 따른 코드를 실행하는 조건문 (키워드가 너무 많아서 잘 안쓰긴 함)
+        //주민번호 뒷자리의 첫글자를 입력받아, 1 혹은 3이면, [남자], 2 혹은 4 이면 [여자], 나머지는 [1~4사이 정수로 입력하세요.]라는 경고창 띄우기
+
+        var first = prompt('주민번호 뒷자리 첫글자 입력','1~4')
+
+        switch(first){//switch, case, break 모두 키워드임
+            case '1' : case'3' ://case의 경우 완전 항등연산자, 문자가 완전히 같아야하므로 작은따옴표('') 사용
+                alert('남자');
+                break;
+            case '2' : case '4':
+                alert('여자');
+                break;
+            default: //위의 case가 아닌 경우
+                alert('1~4사이 정수입력')
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

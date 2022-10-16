@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 조건문</title>
+    <script>
+        //정수를 입력받아, [홀수],[짝수],[정수로 다시 입력하세요]라는 경고창을 띄워주세요.
+
+        var typeNum = prompt('숫자를 입력하세요','정수로 입력하세요')
+
+        if(typeNum % 2 == 1){
+            alert('홀수');
+        }else if(typeNum % 2 == 0){
+            alert('짝수');
+        }else {
+            alert('정수로 다시 입력화세요');
+        };
+
+        /*
+        if(Number(typeNum) > 0){
+            if(typeNum = Number(typeNum)){
+            alert('짝수');
+            }else if(typeNum = Number(typeNum) + 1){
+                alert('홀수');
+            }
+        }else if{
+            alert('정수로 입력하세요.');
+        }
+        */
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
