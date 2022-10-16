@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS기본문법과 변수</title>
+    <script>
+        //사용자에게 국어, 영어, 수학점수를 입력받아 평균을 도출하시오.
+        // 경고창 출력
+        // 평균 : xx.xxx점
+
+        var language = prompt('국어 점수 입력', '정수 입력');
+        var english = prompt('영어 점수 입력', '정수 입력');
+        var math = prompt('수학 점수 입력', '정수 입력');
+
+        var average =  (Number(language) + Number(english) + Number(math)) / 3; //w3c 권장사항 : 연산자 사이는 띄어쓰기
+
+        alert('평균 : ' + average + '점');
+    </script>
+</head>
+<body>
+
+</body>
+</html>

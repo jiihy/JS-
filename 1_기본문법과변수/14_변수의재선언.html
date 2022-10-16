@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS기본문법과 변수</title>
+    <script>
+        //컴퓨터속 카페에서 음료를 주문할 때
+
+        //JS는 재선언해도 틀리지 않지만, 안하는 것이 좋음 (C언어나 Java에서는 무조건 틀림)
+        /* var cup = '라떼';
+        var cup = '녹차';
+        var cup = '물';
+
+        alert(cup); */ //물 출력 - 한 컵에 라떼붓고, 녹차붓고, 마지막에 물 부어서 가장 윗 층에 뜨는걸로 선정됨
+
+        //변수를 재활용
+        var cup ='아메리카노';
+        cup = '콜라'; //재할당
+        // 한 컵에 아메리카노 부었다가 버리고 콜라로 채움
+
+        //다중 선언
+        var cup01 = '라떼';
+        var cup02 = '녹차';
+        var cup03 = '물';
+        // 한 잔씩 모두 주문하고 싶다면 각각 따로 선언했어야함
+    </script>
+</head>
+<body>
+
+</body>
+</html>
