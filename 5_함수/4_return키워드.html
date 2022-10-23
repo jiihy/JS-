@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>함수</title>
+    <script>
+        //return : 반환하라는 키워드
+
+        //1. 제곱을 구하는 함수 선언
+        //return 키워드 뒤에 매개변수 사용 - 매개변수를 사용해서 새로운 값으로 반환
+        function square(x){
+            return x * x;
+        }
+
+        var num = prompt('제곱을 구할 정수를 입력하세요','정소입력');
+
+        alert('제곱값 :' + square(num));
+
+        //2. return 키워드만 쓰기 - 함수를 벗어남(아래 명령 실행 X)
+        function test(){
+            alert('테스트A');
+            return; //함수를 호출하는 곳으로 돌아가라/반환돼라!
+            //함수를 벗어나고 싶을 때 씀 (break처럼)
+            alert('테스트B');
+        }
+
+        test();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배열과 for in문</title>
+    <script>
+        /*
+        - for in문 : 배열이나 객체를 반복할 때 사용하는 구문
+
+        //배열이 갖고있는 인덱스번호만큼만 반복
+        //세미콜론(;)쓸 필요도 없고 식도 짧아짐
+        //IE8이하에서는 동작X
+
+        for(var i in 배열명){
+            반복할 표현식
+        }
+        */
+        var gg = ['윤아','유리','써니','수영','태연','서현','효연','티파니']; //'제시카를 빼보자'
+
+        for(var i in gg){
+            alert(gg[i]);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

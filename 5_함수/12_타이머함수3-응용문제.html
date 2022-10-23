@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>함수</title>
+    <script>
+        //2초마다 [n초가 지났습니다.]라고 문서에 출력하세요.
+        //단, 20초까지만 반환하시오.
+
+        var num = 2;
+
+        var autoPlay = setInterval(function(){
+            document.write(num + '초가 지났습니다. <br>')
+
+            num += 2;
+        },2000);
+
+        setTimeout(function(){
+            clearInterval(autoPlay);
+        },20001);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

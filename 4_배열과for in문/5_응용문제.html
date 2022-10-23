@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배열과 for in문</title>
+    <script>
+        //요일을 선택상자에 출력하시오.
+        var week = ['일','월','화','수','목','금','토'];
+
+        var output = '<select>';
+
+        for(var i in week){
+            output += '<option>' + week[i] + '요일</option>';
+        }
+
+        output += '</select>'
+
+        document.write(output);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

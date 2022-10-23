@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>함수</title>
+    <script>
+        //전역변수 - JS 전체적(어떤 곳에서든)으로 사용하는 변수
+        var totalNum = 100;
+
+        function test(){
+            //지역변수 - 함수 내부에서 선언한 변수
+            var fxNum = 200;
+
+            console.log('함수파트 : ' + totalNum);
+            console.log('함수파트 : ' + fxNum); //에러없음
+        }
+
+        console.log('초기실행파트 : ' + totalNum);
+        console.log('초기실행파트 : ' + fxNum); //호출 실패함, 지역변수를 함수 바깥에서 호출했기 때문
+        test(); //함수호출
+    </script>
+</head>
+<body>
+
+</body>
+</html>

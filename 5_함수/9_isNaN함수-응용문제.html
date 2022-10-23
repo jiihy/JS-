@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>함수</title>
+    <script>
+        //환욜계산기를 만드시오. 
+        //경고창 : [환전금액: xxxx원]
+        //단, 숫자가 아닌 값을 입력하면 [정수로 다시 입력하세요]라는 경고창을 띄우시오.
+
+        var dollar = 1438;
+        var num = prompt('환전할 달러를 입력하세요.','정수 입력');
+
+        if(isNaN(dollar * num)){ //수식이 NaN이면
+            alert('정수로 다시 입력하세요.');
+        }else{
+            alert('환전금액 : ' + (dollar * num) + '원');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

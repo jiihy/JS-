@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>배열과 for in문</title>
+    <script>
+        //length : 배열 값의 개수를 반환하는 속성
+
+        var gg = ['윤아','유리','써니','수영','태연','서현','효연','티파니']; //'제시카를 빼보자'
+        
+        for(var i=0;i<9;i++){
+            alert(gg[i]);
+        }
+        //이 상태로 제시카 빼면 undefined나옴
+
+        for(var i=0;i<gg.length;i++){
+            alert(gg[i]);
+        }
+        //length속성을 사용하면 제시카 빼도 ok
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

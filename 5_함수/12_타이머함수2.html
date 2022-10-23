@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>함수</title>
+    <script>
+        //setInterval(콜백함수,시간); - 시간마다 콜백함수 명령을 계속 실행하는 함수
+        //시간(숫자) : 밀리초 단위 - 1초가 1000
+        //콜백함수(function(){}) : 함수의 매개변수로 사용되는 함수
+
+        var num = 1; //초 숫자를 담는 변수
+
+        setInterval(function(){
+            document.write(num + '초가 지났습니다. <br>');
+
+            num ++;
+        },1000);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

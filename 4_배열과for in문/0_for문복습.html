@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>복습</title>
+    <script>
+        /*
+            for(초기식;조건식;증감식){
+
+            }
+        */
+
+        //1일~31일까지 select태그로 처리
+
+        var output = '<select>';//태그들을 담을 변수
+
+            
+        //옵션태그 반복
+        for(var i=1;i<=31;i++){
+            output += '<option>' + i + '일</option>'
+        }
+
+        output += '</select>'; //태그 닫아주기
+            
+        //문서출력
+        document.write(output);
+
+
+        // html 태그를 직접 작성 : 정적 생성 <-> 동적생성
+        // 위 예시와 달리 규칙이 없을 때 쓰는게 배열임
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
