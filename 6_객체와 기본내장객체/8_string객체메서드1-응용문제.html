@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 객체</title>
+    <script>
+        //사용자에게 주민번호 뒷자리 7자리를 입력받아, 첫글자가 1 혹은 3이면 [남자], 2 혹은 4면 [여자], 나머지는 [잘못 입력하셨습니다.]
+
+        var userNum = prompt('주민번호 뒷자리 입력','정수로 입력');
+        var firstNum = userNum.charAt(0);
+
+        if(firstNum == 1 || firstNum == 3){
+            alert('남자');
+        }else if(firstNum == 2 || firstNum == 4){
+            alert('여자');
+        }else if(userNum.length > 7){
+            alert('7자리 숫자로 입력하세요');
+        }else {
+            alert('잘못 입력하셨습니다.');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

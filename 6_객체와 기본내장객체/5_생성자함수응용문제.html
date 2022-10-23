@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>JS 객체</title>
+    <script>
+        //학생들의 국어, 영어, 수학점수를 통해 평균을 구하시오.
+        //단, 생성자 함수를 통해 메모리를 절감하시오.
+
+        
+        /* 내가 푼거         
+        function Score(name,language,math,english){
+            this.name = name;
+            this.language = language;
+            this.math = math;
+            this.english = english;
+        }
+        
+        Score.prototype.avg = function avg(x){
+            alert('학생이름 :' + name);
+            alert('평균 :' + Number(language + math + english)/3 + '점')
+        } */
+        
+        
+        //생성자함수 - 학생 한명의 평균 점수를 구하는 설계도 작성
+        //매개변수 : 이름, 국어, 영어, 수학
+        function Score(name,kor,eng,math){
+            //속성명 = 매개변수 같게 처리하는 과정
+            this.name = name;
+            this.kor = kor;
+            this.eng = eng;
+            this.math = math;
+        }
+
+        //평균을 구하는 메서드를 메모리 절감을 위해 프로토타입으로 제작
+        //스코어가 가지고있는 프토로타입 이름을 avg라고 하고 = 함수 avg
+        Score.prototype.avg = function avg(){
+            return "학생이름 : " + this.name + '<br>' + '평균 : ' + ((this.kor + this.eng + this.math) / 3) + '점<br>' + '========<br>'; 
+            //데이터 유형이 숫자이므로 Number() 안씀
+        }
+
+        //인스턴스 생성
+        var student01 = new Score('홍길동',90,80,75);
+        var student02 = new Score('김영희',55,77,60);
+        var student03 = new Score('이철수',60,99,45);
+
+        document.write(student01.avg());
+        document.write(student02.avg());
+        document.write(student03.avg());
+
+        //학생이름 : 홍길동
+        //평균 : 80점
+    </script>
+</head>
+<body>
+
+</body>
+</html>
