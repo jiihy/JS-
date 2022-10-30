@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM(document object model)</title>
+</head>
+<body>
+    <h1 class="title">제목태그</h1> <!-- 0 -->
+    <h1 class="title">제목태그</h1> <!-- 1 -->
+    <h1 class="title">제목태그</h1> <!-- 2 -->
+</body>
+<script>
+   //문서객체선택4 - CSS선택자로 선택 - 배열로 선택
+   var title = document.querySelector('.title'); /* css 선택자로 선택하기 때문에 class라는 표시 해줘야함 . */
+   var titleAll = document.querySelectorAll('.title');
+   title.style.textDecoration = 'underline'; // 첫번째 요소만 선택 - 배열번호작성x
+
+
+   titleAll[0].style.color = 'red'
+   titleAll[1].style.color = 'purple'
+   titleAll[2].style.color = 'yellow'
+</script>
+</html>

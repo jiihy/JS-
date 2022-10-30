@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOM</title>
+</head>
+<script>
+    var mobile_keys = ['iPone','Android','SAMSUNG'];
+
+    //모바일 기기명이 맞는지 한개씩 모두 확인
+    for(var i in mobile_keys){
+        //match(문자열) : String객체의 메서드 - 매개변수의 문자열을 갖고 있다면 true를 반환
+        //브라우저 에이전트 정보에 mobile_keys의 값이 하나라도 있다면 
+        if(navigator.userAgent.match(mobile_keys[i])){
+            alert('모바일기기에 접속하셨습니다.')
+        }
+    }
+
+</script>
+<body>
+    
+</body>
+</html>

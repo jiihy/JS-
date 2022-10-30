@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>기본내장객체</title>
+    <script>
+        //게터(getOO) : 객체의 값을 가져오는 메서드
+        //세터(setOO) : 객체의 값을 변경하는 메서드
+
+        var today = new Date();
+
+        //100일 뒤 반환 (오늘 빼고 더하기 99)
+        today.setDate(today.getDate() + 99); //today의 값을 불러와서 '반환'해버림
+
+        alret(today.toLocaleDateString());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
