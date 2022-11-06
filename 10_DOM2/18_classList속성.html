@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- root node : html은 부모가 없음 -->
+<!-- head와 body는 html요소의 자손 -->
+<head>
+    <meta charset="UTF-8">
+    <title>JS - DOM</title>
+    <style>
+        .active {
+            background-color: black;
+            color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 폼관련 요소는 name속성을 통해서 데이터관리 -->
+    <h1>제목태그</h1>
+    <p class="text">문단태그</p>
+    <script>
+        //classList : 문서객체의 class의 값을 추가,제거,전환하는데 사용
+        //이 속성은 DOMTokenList객체로 반환됨
+        //1. length : 클래스 개수를 반환하는 속성
+        //2.  add('클래스명1','클래스명2',...) : 하나이상의 클래스를 추가하는 메서드
+        //3. remove('클래스명1','클래스명2',...) : 하나 이상의 클래스를 제거하는 메서드
+        //4. toggle('클래스명') : add()와 remove()를 번갈아 실행하는 메서드
+
+        var h1 = document.querySelector('h1');
+
+        //마우스 올리면 active클래스를 추가
+        h1.addEventListener('mouseenter',function(){
+            this.classList.add('active');
+        });
+
+        //마우스 내리면 active클래스 제거
+        h1.addEventListener('mouseleave',function(){
+            this.classList.remove('active')
+        })
+
+        //한번 클릭하면 클래스추가, 또 클릭하면 클래스 제거
+        //toggle : 한키나 한 버튼이 두가지 기능을 번갈아 실행
+        h2.addEventListener('click',function(){
+            this.classList.toggle('active');
+        });
+    
+    </script>
+
+</body>
+</html>

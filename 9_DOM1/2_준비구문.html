@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM(document object model)</title>
+</head>
+<script>
+   //준비구문 : 창을 먼저 읽고(문서객체 다 읽고) 스크립트 구문을 실행
+   //제이쿼리와는 다르게 자바스크립트에서는 준비구문을 한번만 작성해야 함
+   window.onload = function(){ /* 밑에서부터 읽고 다시 올라오기 떄문에 느려서 별로임. 안씀 */
+    var title = document.querySelector('.title');
+
+    title.style.color = 'red';
+   }
+</script>
+<body>
+    <h1 class="title">제목태그</h1> <!-- 0 -->
+    <h1 class="title">제목태그</h1> <!-- 1 -->
+    <h1 class="title">제목태그</h1> <!-- 2 -->
+</body>
+</html>

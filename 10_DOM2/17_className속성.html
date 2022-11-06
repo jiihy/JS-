@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- root node : html은 부모가 없음 -->
+<!-- head와 body는 html요소의 자손 -->
+<head>
+    <meta charset="UTF-8">
+    <title>JS - DOM</title>
+    <style>
+        .active {
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 폼관련 요소는 name속성을 통해서 데이터관리 -->
+    <h1>제목태그</h1>
+    <p class="text">문단태그</p>
+    <script>
+        //className : 문서객체의 class속성을 설정하거나 값을 반환
+
+        var h1 = document.querySelector('h1');
+        var p = document.querySelector('p');
+
+        h1.className = "active";
+        
+        console.log(p.className);
+    </script>
+
+</body>
+</html>

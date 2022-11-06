@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- root node : html은 부모가 없음 -->
+<!-- head와 body는 html요소의 자손 -->
+<head>
+    <meta charset="UTF-8">
+    <title>JS - DOM</title>
+    <style>
+        #box01 {
+            width: 300px;
+            height: 200px;
+            border: 3px solid #000;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>제목태그</h1>
+    <h1>제목태그</h1>
+    <h1>제목태그</h1>
+    <script>
+        //문서객체 선택시 배열로 선택되는 것에 대한 문제
+        //getElementsByClassName(), getElementsByTagName(), querySelectorAll()
+        //요소사이의 공백도 노드로 인식해서 실제 개수보다 많게 인식
+
+        var h1 = document.querySelectorAll('h1');
+
+        var color = ['red','green','blue'];
+
+        // 공백까지 CSS를 주려 하기 떄문에 콘솔창 에러 뜸
+        for(var i in h1){
+            h1[i].style.color = color[i];
+        }
+
+        //for을 통해 length로 처리하면 실제 문서객체 개수로 반환
+        for(var i = 0;i<h1.length;i++){
+            h1[i].style.color = color[i];
+        }
+        
+    </script>
+
+</body>
+</html>

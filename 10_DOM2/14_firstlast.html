@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko"> <!-- root node : html은 부모가 없음 -->
+<!-- head와 body는 html요소의 자손 -->
+<head>
+    <meta charset="UTF-8">
+    <title>JS - DOM</title>
+    <style>
+        #box01 {
+            width: 300px;
+            height: 200px;
+            border: 3px solid #000;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h2>제목태그2</h2>
+        <h2>제목태그2</h2>
+        <h1>제목태그1</h1>
+        <h2>제목태그2</h2>
+        <h2>제목태그2</h2>
+    </div>
+    <script>
+        var h1 = document.querySelector('h1');
+
+        h1.previousElementSibling.style.color = 'red';
+        h1.nextElementSibling.style.color = 'blue';
+    </script>
+
+</body>
+</html>
