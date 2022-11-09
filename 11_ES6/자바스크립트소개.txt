@@ -1,0 +1,21 @@
+* 자바스크립트 소개
+1. 명칭
+    1) 자바스크립트 : 언어이름
+    2) ECMASCript : 표준, 규격
+2. 자바스크립트버전
+    1) ECMASCript 1(1997) : 첫버전
+    2) ECMASCript 2(1998) : 편집 상태만 변경
+    3) ECMASCript 3(1999) : 우리가 흔히 말하는 자바스크립트, 정규식 추가, try/catch 추가
+    4) ECMASCript 5(2009) - ES5
+        - 엄격한 언어방식 추구
+        - JSON 추가
+        - String.trim() / Array.isArray() 등 추가
+        - 배열 반복 방법 추가
+    5) ECMASCript 2015 - ES6
+        - 변수선언 키워드 추가
+        - 화살표함수 추가
+        - 기본 매개변수 추가
+        - 배열 메서드 추가
+    6) ECMASCript 2016 - ES7
+    6) ECMASCript 2017 - ES8
+    6) ECMASCript 2018 - ES9

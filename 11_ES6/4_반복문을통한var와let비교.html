@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS - ES6</title>
+    </head>
+    <body>
+        <script>
+            //1. var를 통한 for문 처리
+            var i = 10; //전역변수
+
+            for(var i=0;i<5;i++){ //전역변수 재선언
+                console.log(i); //0 1 2 3 4
+            }
+
+            console.log(i); //5 - 개발자들이 이해가 잘 안되는 상황
+
+
+            console.log('=========');
+
+            //2. let을 통한 for문 처리
+            let j = 10; //전역변수
+
+            for(let j=0;j<5;j++){ //지역변수
+                console.log(j); //지역변수값을 호출
+            }
+
+            console.log(j); //전역변수값을 호출
+        </script>
+    </body>
+</html>
