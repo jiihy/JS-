@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>DOM(document object model)</title>
-</head>
-<body>
-    <h1 class="title">제목태그</h1> <!-- 0 -->
-    <h1 class="title">제목태그</h1> <!-- 1 -->
-    <h1 class="title">제목태그</h1> <!-- 2 -->
-</body>
-<script>
-   //문서객체선택3 - 클래스로 선택 - 복수로 인식
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM(document object model)</title>
+        
+    </head>
+    <body>
+        <h1 class="title">제목태그</h1><!-- 0 -->
+        <h1 class="title">제목태그</h1><!-- 1 -->
+        <h1 class="title">제목태그</h1><!-- 2 -->
+        <script>
+            //문서객체선택3 - 클래스로 선택 - 복수로 인식
+            var title = document.getElementsByClassName('title');
 
-   var title = document.getElementsByClassName('title');
-
-    title[0].style.color = 'red'
-    title[1].style.color = 'purple'
-    title[2].style.color = 'yellow'
-</script>
+            title[0].style.color = 'red';
+            title[1].style.color = 'green';
+            title[2].style.color = 'blue';
+        </script>
+    </body>
 </html>

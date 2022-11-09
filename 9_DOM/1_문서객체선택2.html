@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>DOM(document object model)</title>
-</head>
-<body>
-    <!-- 태그명으로 작성하면 무조건 복수로 인식해서 '나열'됨 (JS는 나열되면 배열에 저장함)-->
-    <h1>제목태그</h1> <!-- 0 -->
-    <h1>제목태그</h1> <!-- 1 -->
-    <h1>제목태그</h1> <!-- 2 -->
-</body>
-<script>
-    //문서객체선택2 : 태그명으로 선택
-    var title = document.getElementsByTagName('h1');
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM(document object model)</title>
+        
+    </head>
+    <body>
+        <!-- 나열해서 태그 작성 -->
+        <h1>제목태그</h1><!-- 0 -->
+        <h1>제목태그</h1><!-- 1 -->
+        <h1>제목태그</h1><!-- 2 -->
+        <script>
+            //문서객체선택2 : 태그명으로 선택 - 무조건 복수로 인식
+            var title = document.getElementsByTagName('h1');
 
-    title[0].style.color = 'red'
-    title[1].style.color = 'purple'
-    title[2].style.color = 'yellow'
-</script>
+            title[0].style.color = 'red';
+            title[1].style.color = 'green';
+            title[2].style.color = 'blue';
+        </script>
+    </body>
 </html>

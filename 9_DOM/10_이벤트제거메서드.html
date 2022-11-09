@@ -1,18 +1,18 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<meta charset="utf-8" />
-		<title>DOM - 이벤트</title>
-	</head>
-	<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM - 이벤트</title>
+    </head>
+    <body>
         <h1>제목태그</h1>
         <script>
             //이벤트 : 명령을 발생시키는 시점
 
-            //addEventListner('이벤트타입','콜백함수')
+            //removeEventListener('이벤트타입',콜백함수)
 
-            //h1태그를 클릭하면 경고창 띄우기, 5초 뒤에는 경고창 안뜨게 처리
-            var h1 = document.querySelector('h1'); 
+            //h1태그를 클릭하면 경고창 띄우기, 5초뒤에는 경고창 안뜨게 처리
+            var h1 = document.querySelector('h1');
 
             function popup(){
                 alert('클릭되었습니다.');
@@ -22,7 +22,7 @@
 
             setTimeout(function(){
                 h1.removeEventListener('click',popup);
-            },5000)
+            },5000);
         </script>
-	</body>
+    </body>
 </html>

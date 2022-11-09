@@ -1,13 +1,13 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-	<head>
-		<meta charset="utf-8" />
-		<title>DOM - 이벤트</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>DOM - 이벤트</title>
     </head>
-	<body>
+    <body>
         <input type="text" placeholder="생년월일입력" maxlength="6">
-        -
-        <input type="text" id="first" maxlength="1" style="width:15px;">XXXXXX
+        - 
+        <input type="text" id="first" maxlength="1" style="width: 15px;">XXXXXX
         <hr>
         <input type="radio" id="male" name="gender">
         <label for="male">남자</label>
@@ -28,12 +28,12 @@
                 }else if(num == 2 || num == 4){
                     female.checked = true;
                 }else if(num == ''){
-                }else {
+                }else{
                     male.checked = false;
                     female.checked = false;
                     alert('1~4사이 정수로 입력하세요');
                 }
             }
         </script>
-	</body>
+    </body>
 </html>
