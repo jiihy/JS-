@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>BOM</title>
-</head>
-<script>
-    //window : 창객체
-    //모든 객체는 속성과 메서드를 갖고 있다!
-    //속성 문법 : 객체명.속성명
-    //메서드 문법 : 객체명.메서드명()
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>BOM</title>
+        <style>
+            body{ height: 3000px; }
+        </style>
+        <script>
+            //window : 창객체
+            //모든 객체는 속성과 메서드를 갖고 있다!
+            //속성문법 : 객체명.속성명
+            //메서드문법 : 객체명.메서드명()
 
-    //open(url,name,specs,replace) : 기본적으로 새창을 여는 메서드
-    //현재는 브라우저상에서 팝업을 차단해놓기 때문에 div를 끄고 키는 방식으로 팝업 설정
-    //1. url : 새창을 띄우고 싶은 html의 주소
-    //2. name : url을 어디에 띄우고 싶은지 작성
-    // - _blank : 기본값, 새창으로 띄움
-    // - _self : 현재 창으로 띄움
-    // - _parent : 아이프레임의 부모가 되는 페이지에 띄움
-    //3. specs : 창에 대한 특징 기술
-    // - width : 새 창의 가로폭 지정
-    // - height : 새 창의 높이 지정
-    //4. replace: 현재 페이지의 주소 내역(history)를 가져가면 true, 그렇지 않으면 false (잘 안씀)
+            //open(url,name,specs,replace) : 기본적으로는 새창을 여는 메서드
+            //1. url : 새창을 띄우고 싶은 html의 주소
+            //2. name : url을 어디에 띄우고 싶은지 작성
+            //  - _blank : 기본값, 새창으로 띄움
+            //  - _self : 현재 창으로 띄움
+            //  - _parent : 아이프레임의 부모가 되는 페이지에 띄움
+            //3. specs : 창에 대한 특징 기술
+            //  - width : 새창의 가로폭 지정
+            //  - height : 새창의 높이 지정
+            //4. replace : 현재 페이지의 주소내역(history)를 가져가면 true, 그렇지 않으면 false
 
-    window.open('www.naver.com','width=300,height=300'); //팝업 차단 때문에 잘 안쓰는 형태
-</script>
-<body>
-    
-</body>
+            window.open('https://ezenac.co.kr','','width=300,height=300');
+            
+        </script>
+    </head>
+    <body>
+        
+    </body>
 </html>

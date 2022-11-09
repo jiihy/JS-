@@ -10,12 +10,20 @@
             //           객체명.속성명 = 값;
             //메서드문법 : 객체명.메서드명()
 
-            //assign(url) : 주소표시줄을 매개변수값으로 변경하는 메서드
+            //reload() : 주소를 새로고침하는 메서드
 
-            //5초뒤에 네이버로 주소 이동하시오.
+            //1초마다 [n초가 지났습니다]라는 문구를 출력하고 10초뒤 새로고침하시오.
+            var num = 1;
+
+            setInterval(function(){
+                document.write(num + '초가 지났습니다.<br>');
+
+                num++; //1씩 증가
+            },1000);
+
             setTimeout(function(){
-                location.assign('https://naver.com');
-            },5000);
+                location.reload(); //새로고침 처리
+            },10001);
         </script>
     </head>
     <body>

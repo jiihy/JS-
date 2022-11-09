@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>기본내장객체</title>
-    <script>
-        //모든 객체는 속성과 메서드를 갖고있다.
-        //메서드 : 객체에 주는 명령/동작 - 메서드명()
-        //메서드의 두가지 종류 ) 값을 얻어오는 방식과 동작만 하는 방식 
-        //게터(getOO) : 객체의 값을 가져오는 메서드
-        //세터(setOO) : 객체의 값을 변경하는 메서드
+    <head>
+        <meta charset="UTF-8">
+        <title>기본내장객체</title>
+        <script>
+            //모든 객체는 속성과 메서드를 갖고 있다.
+            //메서드 : 객체에 주는 명령/동작 - 메서드명()
+            //게터(getOO) : 객체의 값을 얻어오는 메서드
+            //세터(setOO) : 객체의 값을 변경하는 메서드
 
-        var today = new Date();
+            var today = new Date();
 
-        //출력 : 2022년 10월 30일
+            //출력 : 2022년 10월 30일
 
-        var y = today.getFullYear();
-        var m = today.getMonth() + 1; // 월은 인덱스 번호로 반환 
-        var d = today.getDate();
+            var y = today.getFullYear();
+            var m = today.getMonth() + 1; //월은 인덱스번호로 반환
+            var d = today.getDate();
 
-        alert(y + '년 ' + m + '월 ' + d + '일 ');
+            alert(y + '년 ' + m + '월 ' + d + '일');
 
-        //출력 : 00시 00분 00초
+            //출력 : 00시 00분 00초
 
-        var h = today.getHours(); //시간은 복수로
-        var m2 = today.getMinutes();
-        var s = today.getSeconds();
+            var h = today.getHours(); 
+            var m2 = today.getMinutes();
+            var s = today.getSeconds();
 
-        alert(h + '시 ' + m2 + '분 ' + s + '초')
+            alert(h + '시 ' + m2 + '분 ' + s + '초');
 
-        //출력 - 오늘요일 : X요일
-        //getDay() : 요일을 반환하는 메서드 - 인덱스번호
-        //           일요일이 0, 토요일이 6
 
-        var week = ['일','월','화','수','목','금','토']; //규칙이 없는 것에 규칙을 부여하는게 index array
-        var day = today.getDay();
-
-        alert('오늘 요일 : ' + week[day] + '요일')
-    </script>
-</head>
-<body>
-    
-</body>
+            //출력 - 오늘요일 : X요일
+            //getDay() : 요일을 반환하는 메서드 - 인덱스번호
+            //           일요일이 0, 토요일이 6
+            var week = ['일','월','화','수','목','금','토'];
+            var day = today.getDay();
+            
+            alert('오늘요일 : ' + week[day] + '요일');
+        </script>
+    </head>
+    <body>
+        
+    </body>
 </html>

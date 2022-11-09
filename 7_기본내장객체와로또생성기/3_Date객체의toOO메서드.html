@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>기본내장객체</title>
-    <script>
-        //메서드 - 현재 보기 어려운 OO을 보기 편하게 바꿔줘라
+    <head>
+        <meta charset="UTF-8">
+        <title>기본내장객체</title>
+        <script>
+            var today = new Date();
 
-        var today = new Date();
+            var date = today.toLocaleDateString();
+            var time = today.toLocaleTimeString();
 
-        var date = today.toLocaleDateString(); //메서드의 특징 : 매개변수가 없더라도 반드시 괄호를 열고 닫아야한다.*
-        var time = today.toLocalTimeString();
-
-        alert(date);
-        alert(time);
-    </script>
-</head>
-<body>
-    
-</body>
+            alert(date);
+            alert(time);
+        </script>
+    </head>
+    <body>
+        
+    </body>
 </html>
