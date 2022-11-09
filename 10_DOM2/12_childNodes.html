@@ -1,41 +1,35 @@
 <!DOCTYPE html>
-<html lang="ko"> <!-- root node : html은 부모가 없음 -->
-<!-- head와 body는 html요소의 자손 -->
-<head>
-    <meta charset="UTF-8">
-    <title>JS - DOM</title>
-    <style>
-        #box01 {
-            width: 300px;
-            height: 200px;
-            border: 3px solid #000;
-            margin-bottom: 20px;
-        }
-    </style>
-</head>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>JS - DOM</title>
+        <style>
+            div{
+                width: 300px; height: 200px;
+                border: 1px solid black;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box01">
+            <h1>제목태그</h1>
+            <p>문단태그</p>
+        </div>
+        <script>
+            //부모요소만 선택
+            var box01 = document.getElementById('box01');
 
-<body>
-    <div id="box01">
-        <!-- 자손요소를 2개 작성 -->
-        <h1>제목태그</h1>
-        <p>제목태그</p>
-    </div>
-    <script>
-        //부모요쇼만 선택
-        var box01 = document.getElementById('box01');
+            //자손 노드 개수 확인
+            var num01 = box01.childNodes.length; //공백까지도 자손으로 받음
+            var num02 = box01.childElementCount; //공백 제외
 
-        //자손 노드 개수 확인
+            console.log(num01);
+            console.log(num02);
 
-        var num01 = box01.childeNodes.legth //Enter 공백까지 child로 인식함
-        var num02 = box01.childElementCount; //공백 제외하고 카운트
 
-        console.log(num01);
-        console.log(num02);
-        //for문은 공백을 포함하지 X forin문은 포함해버림
+            
 
-        box01.childNodes[0].style.color = 'red'
-
-    </script>
-
-</body>
+        </script>
+    </body>
 </html>

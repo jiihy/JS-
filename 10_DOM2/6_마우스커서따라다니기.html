@@ -1,37 +1,33 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>JS - DOM</title>
-    <style>
-        body{
-            cursor: none; /* 문서 전체에서 마우스 커서 모양을 안보이게 처리*/
-        }
-        #cursor {
-            position: absolute; /* CSS/JS에서 움직이는 요소는 모두 Position이 변경되어야 함*/
-            left: 0;
-            top: 0;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS - DOM</title>
+        <style>
+            body{ cursor: none; } /* 문서 전체에서 마우스 커서 모양을 안보이게 처리 */
+            #cursor{
+                position: absolute; /* CSS/JS에서 움직이는 요소는 모두 position이 변경되어야 함 */
+                left: 0; top: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="cursor.png" alt="" id="cursor">
+        <script>
+            //1. 문서객체 선택
+            var cursor = document.getElementById('cursor');
 
-<body>
-    <img src="cursor.png" alt="커서이미지" id="cursor">
-    <script>
-        //1. 문서객체 선택
-        var cursor = document.getElementById('cursor');
+            document.addEventListener('mousemove',function(e){
+                //e : 이벤트 발생시의 정보를 담는 이벤트객체
+                //clientX : 기준이 현재 창이고, 마우스 포인터의 X축 좌표 반환
+                //clientY : 기준이 현재 창이고, 마우스 포인터의 Y축 좌표 반환
 
-        document.addEventListener('mousemove',function(e){
-            //e: 이벤트 발생시의 정보를 담는 이벤트 객체
-            //clientX : 기준이 현재 창이고, 마우스 포인터의 X축 좌표 반환
-            //clientY : 기준이 현재 창이고, 마우스 포인터의 Y축 좌표 반환
+                var x = e.clientX;
+                var y = e.clientY;
 
-            var x = e.clientX;
-            var y = e.clientY;
-
-            cursor.style.left = x + 'px';
-            cursor.style.top = y + 'px';
-        });
-    </script>
-</body>
+                cursor.style.left = (x - 32) + 'px';
+                cursor.style.top = (y - 32) + 'px';
+            });
+        </script>
+    </body>
 </html>

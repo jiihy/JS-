@@ -55,7 +55,16 @@
             </a>
         </div>
         <script>
+            //문서객체선택 - a
+            var btn = document.querySelector('.panel_btn > a');
 
+            //클릭이벤트
+            btn.addEventListener('click',function(e){
+                //# : 임시링크 - 클릭 시 홈페이지 상단으로 올라가는 기본이벤트가 있음
+                e.preventDefault(); //기본이벤트 제거
+
+                this.classList.toggle('active');
+            });
         </script>
     </body>
 </html>

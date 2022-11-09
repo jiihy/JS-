@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>JS - DOM</title>
-</head>
-<body>
-    <!-- 정적생성 : html에 마크업하는 것 -->
-    <h1 id="title">제목태그</h1>
-    <h1 class="text">제목태그</h1>
-    <h1 class="text">제목태그</h1>
-    <h1>제목태그</h1>
-    <h1>제목태그</h1>
-    
-    <script>
-        //1. 아이디 선택방식
-        var title = document.getElementById('title');
-        title.style.color = 'red';
+    <head>
+        <meta charset="UTF-8">
+        <title>JS - DOM</title>
+    </head>
+    <body>
+        <!-- 정적생성 : html에 마크업하는 것 -->
+        <h1 id="title">제목태그</h1>
+        <h1 class="text">제목태그</h1>
+        <h1 class="text">제목태그</h1>
+        <h1>제목태그</h1>
+        <h1>제목태그</h1>
 
-        //2. 태그명 선택방식 - 복수로 선택 - 배열로 선택
-        var h1 = document.getElementsByTagName('h1');
-        
-        for(var i=0;i<h1.length;i++){
-            h1[i].style.textDecoration = 'underline';
-        }
+        <script>
+            //1. 아이디 선택방식
+            var title = document.getElementById('title');
+            title.style.color = 'red';
 
-        //3. 클래스명 선택방식  - 복수로 선택 - 배열로 선택
-        var text = document.getElementsByClassName('text');
-    
-        for(var i=0;i<text.length;i++){
-            text[i].style.color = 'blue';
-        }
+            //2. 태그명 선택방식 - 복수로 선택 - 배열로 선택
+            var h1 = document.getElementsByTagName('h1');
 
-        //4. CSS선택자로 선택 - 첫번째 것 한개만 선택
-        var first = document.querySelector('.text');
+            for(var i=0;i<h1.length;i++){
+                h1[i].style.textDecoration = 'underline';
+            }
 
-        first.style.fontStyle = 'italic';
+            //3. 클래스명 선택방식 - 복수로 선택 - 배열로 선택
+            var text = document.getElementsByClassName('text');
 
-        //5. CSS선택자로 선택 - 모든 것을 선택 - 복수로 선택
-        var all = document.querySelectorAll('.text');
+            for(var i=0;i<text.length;i++){
+                text[i].style.color = 'blue';
+            }
 
-        all[0].style.fontSize = '20px';
-        all[1].style.fontSize = '40px';
-    </script>
-</body>
+            //4. CSS선택자로 선택 - 첫번째 것 한개만 선택
+            var first = document.querySelector('.text');
+
+            first.style.fontStyle = 'italic';
+
+            //5. CSS선택자로 선택 - 모든 것을 선택 - 복수로 선택
+            var all = document.querySelectorAll('.text');
+
+            all[0].style.fontSize = '20px';
+            all[1].style.fontSize = '30px';
+        </script>
+    </body>
 </html>
